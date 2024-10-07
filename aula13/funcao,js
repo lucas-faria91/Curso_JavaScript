@@ -1,0 +1,28 @@
+function saudacao(nome){ //function é a palavra reservada para criar funções
+   return `Bom dia ${nome}!`;
+}
+
+const variavel = saudacao('Lucas'); //guarda o retorno na variavel
+console.log(variavel)
+
+
+function soma(x, y){
+    const resultado = x + y;
+    return resultado;
+}
+
+console.log(soma(3,5));
+
+const raiz = function(n){ //cria uma função anonima e guarda ela na variável
+    return n**0.5;
+}; //neste caso precisa encerrar a função com ponto e vírgula
+
+console.log(raiz(9));
+
+const potencia = (b, e) =>{ //arrow function, função de seta, outra forma de criar função
+    return b ** e;
+};
+//poderia criar a arrow function fazendo assim:
+//const potencia = (b, e) => b ** e; sem precisar do return
+
+console.log(potencia(4,2));
